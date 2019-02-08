@@ -1,9 +1,9 @@
-int playb = 2;
-int pauseb = 3;
-int replayb = 4;
+int playb = 2; //declare play button
+int pauseb = 3; //declare pause/unpause button
+int replayb = 4; //declare rewind button
 
 void setup() {
-  // put your setup code here, to run once:
+  //setting pins as output
 pinMode(playb,OUTPUT);
 pinMode(pauseb,OUTPUT);
 pinMode(replayb,OUTPUT);
