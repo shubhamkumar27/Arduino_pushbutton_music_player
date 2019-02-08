@@ -1,19 +1,18 @@
-import serial
-from pygame import mixer
-mixer.init()
+#THIS PROJECT IS CURRENTLY ONGOING. READ README.md FOR MORE INFORMATION
 
-# ser = serial.Serial('COM5',9600)
-#
-# i=0
-# j=0
+import serial #importing pyserial library 
+from pygame import mixer # importing mixer from pygame library
+mixer.init() #initialising mixer
 
+# Start function defined
 def start(path):
-    ser = serial.Serial('COM5', 9600)
+    ser = serial.Serial('COM5', 9600) #creating serial object
 
     i = 0
     j = 0
+    #infinte loop
     while 1:
-        data = ser.readline()
+        data = ser.readline() # reading data from serial monitor
         if data==b'play\r\n':
             i+=1
             if i%2 !=0:
@@ -38,5 +37,5 @@ def start(path):
             print("Restarting the song")
 
 if __name__ == '__main__':
-    path = input("Enter the path of music:")
-    start(path)
+    path = input("Enter the path of music:") # taking path as input
+    start(path) # calling start function with path as argument
