@@ -1,7 +1,7 @@
 # Arduino_pushbutton_music_player
 
 
->AIM : Perform basic fuctions like play/pause/stop/rewind etc to control music using arduino and push buttons
+Performs basic fuctions like play/pause/stop/rewind etc to control music using arduino and push buttons
 
 >Libraries used: Pyserial and Pygame(mixer)
 
